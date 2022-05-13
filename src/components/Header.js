@@ -4,7 +4,7 @@ const  Header = () => {
 
     var date = new Date();
 date. setDate(date. getDate() - 13);
-console. log( "in react 7 days",date);
+// console. log( "in react 7 days",date);
 
     const addDays = (dateObj, numDays) =>{
         dateObj.setDate(dateObj.getDate() + numDays);
@@ -26,15 +26,15 @@ console. log( "in react 7 days",date);
      let sixDay =sixth.toLocaleDateString()
      
      
-     console.log(
-         'Today: ' + today +
-         '\nTomorrow: ' + firstDay +
-         '\nThird-Day: ' + secondDay +
-         '\nForth-Day: ' + thirdDay +
-         '\nFifth-Day: ' + forthDay+
-         '\nSisth-Day: ' + fifthDay +
-         '\nSeventh-Day: ' + sixDay
-     );
+    //  console.log(
+    //      'Today: ' + today +
+    //      '\nTomorrow: ' + firstDay +
+    //      '\nThird-Day: ' + secondDay +
+    //      '\nForth-Day: ' + thirdDay +
+    //      '\nFifth-Day: ' + forthDay+
+    //      '\nSisth-Day: ' + fifthDay +
+    //      '\nSeventh-Day: ' + sixDay
+    //  );
 // let weekDates = []
 //     for (let i = 0; i < 7; i++) {
 //         let today = new Date();
