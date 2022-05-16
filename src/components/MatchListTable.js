@@ -18,7 +18,7 @@ const MatchListTable = () => {
 
 	const [filterItem, seFilterItem] = useState({})
 
-	console.log("filterItem", filterItem)
+	// console.log("filterItem", filterItem)
 	const handleDetailMatch = (index) => {
 		// const newList = data.filter((elem) => index === elem.MatchId);
 		// seFilterItem(newList)
@@ -43,8 +43,6 @@ const MatchListTable = () => {
 							let dateTime = date.toString().replace("GMT+0530 (India Standard Time)", " ")
 							{/* let newDate = date.toLocaleDateString('en-us', { month: 'short', year: 'numeric', day: 'numeric' })
 							let time = date.toTimeString().replace("GMT+0530 (India Standard Time)", " ") */}
-
-
 							return (
 								<tr key={index}>
 									<td>{elem.Country}</td>
@@ -57,8 +55,13 @@ const MatchListTable = () => {
 											</span>
 										</Link>
 									</td>
-									<td>{dateTime}</td>
-									{/* <td>{`${newDate} ${time}`}</td> */}
+									<td>
+										<Link to="/selection">
+											{dateTime}
+											{/* <td>{`${newDate} ${time}`}</td> */}
+										</Link>
+									</td>
+
 								</tr>
 							)
 						})}
