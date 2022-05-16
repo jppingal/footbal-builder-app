@@ -20,8 +20,8 @@ const MatchListTable = () => {
 
 	console.log("filterItem", filterItem)
 	const handleDetailMatch = (index) => {
-		const newList = data.filter((elem) => index === elem.MatchId);
-		seFilterItem(newList)
+		// const newList = data.filter((elem) => index === elem.MatchId);
+		// seFilterItem(newList)
 	}
 
 	return (
@@ -44,13 +44,15 @@ const MatchListTable = () => {
 							{/* let newDate = date.toLocaleDateString('en-us', { month: 'short', year: 'numeric', day: 'numeric' })
 							let time = date.toTimeString().replace("GMT+0530 (India Standard Time)", " ") */}
 
+
 							return (
 								<tr key={index}>
 									<td>{elem.Country}</td>
 									<td>{elem.LeagueName}</td>
 									<td>
-										<Link to={{ pathname: "match", propsFilterItem: filterItem }}>
+										<Link to={{ pathname: "match", propsFilterItem: elem }}>
 											<span onClick={() => handleDetailMatch(elem.MatchId)}>
+
 												{elem.MatchName}
 											</span>
 										</Link>
