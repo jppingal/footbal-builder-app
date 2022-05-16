@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import "./index.css";
 import MatchListTable from './MatchListTable';
 
-const  Home = () => {
+const Home = () => {
 	return (
 		<div className="home-container">
-			<Header/>
-			<MatchListTable/>
+			<Header />
+			<MatchListTable />
 		</div>
 	);
 }
