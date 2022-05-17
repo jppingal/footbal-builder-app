@@ -8,25 +8,24 @@
 }
 
 .header-container {
-	/* position: fixed; */
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 50px;
-	/* font-size: 34px; */
 	width: 100vw;
 	box-sizing: border-box;
 }
 
 .nav-contents {
 	display: block;
+	position: sticky;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 7px 3px;
 	margin: 15px;
 	flex-wrap: wrap;
-	/* border: 1px solid; */
 	background-color: aliceblue;
 	box-shadow: -2px 4px 12px gray;
 	border-radius: 4px;
@@ -53,7 +52,6 @@
 	border-bottom: 2px solid #52ff2f;
 }
 
-/* -------------------------MatchLIstTable- style----------------------- */
 .matchList-container {
 	position: relative;
 	display: flex;
@@ -119,7 +117,6 @@ select {
 }
 
 .droupdown-title {
-	/* position: relative; */
 	color: #78e9ba;
 	max-height: 15px;
 	font-size: large;
@@ -128,7 +125,6 @@ select {
 
 option {
 	max-height: 200px;
-	/* margin-top: 2px; */
 }
 
 table {
@@ -137,6 +133,7 @@ table {
 	margin-bottom: 20px;
 	border-collapse: collapse;
 	background-color: aliceblue;
+	box-sizing: border-box;
 }
 
 table,
@@ -147,9 +144,6 @@ th {
 
 td {
 	text-align: center;
-}
-
-td {
 	padding: 5px;
 }
 
