@@ -18,11 +18,7 @@ const MatchListTable = () => {
 
 	const [filterItem, seFilterItem] = useState({})
 
-	// console.log("filterItem", filterItem)
-	const handleDetailMatch = (index) => {
-		// const newList = data.filter((elem) => index === elem.MatchId);
-		// seFilterItem(newList)
-	}
+	const handleDetailMatch = (index) => { }
 
 	return (
 		<div className='matchList-container'>
@@ -47,15 +43,14 @@ const MatchListTable = () => {
 								<tr key={index}>
 									<td>{elem.Country}</td>
 									<td>{elem.LeagueName}</td>
-									<td>
+									<td className='link-tag'>
 										<Link to={{ pathname: "match", propsFilterItem: elem }}>
 											<span onClick={() => handleDetailMatch(elem.MatchId)}>
-
 												{elem.MatchName}
 											</span>
 										</Link>
 									</td>
-									<td>
+									<td className='link-tag'>
 										<Link to="/selection">
 											{dateTime}
 											{/* <td>{`${newDate} ${time}`}</td> */}

@@ -3,8 +3,6 @@ import "./index.css";
 
 const MatchDetails = (props) => {
 	const [matchDetails, setMatchDetails] = useState([])
-	// const results = Object.keys(matchDetails).map((key) => matchDetails[key]);
-	// console.log(results[0]);
 	useEffect(() => {
 		console.log("Props-ReceiveMatchDetails1", { propsFilterItem })
 		if (!!propsFilterItem) {
@@ -28,7 +26,6 @@ const MatchDetails = (props) => {
 								<h3>Match Id</h3>
 								<h3>{matchDetails.MatchId}</h3>
 							</div>
-
 							<div className='match-place'>
 								<h3>MatchTime</h3>
 								<h3>{matchDetails.MatchTime}</h3>

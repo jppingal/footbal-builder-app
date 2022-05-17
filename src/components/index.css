@@ -79,6 +79,7 @@
 	border-bottom: 1.5px solid gray;
 	box-sizing: border-box;
 }
+
 .builder-table-container {
 	position: relative;
 	display: flex;
@@ -89,6 +90,7 @@
 	background-color: #f7fbfd;
 	box-sizing: border-box;
 }
+
 .builder-table {
 	flex-direction: column;
 	margin-top: 50px;
@@ -101,6 +103,7 @@
 	margin-bottom: 20px;
 	box-sizing: border-box;
 }
+
 .builder-table-thead {
 	position: sticky;
 	top: 0;
@@ -109,19 +112,25 @@
 	font-weight: 800;
 	font-size: 18px;
 }
-select{
+
+select {
 	max-height: 150px;
 	margin: 20px;
 }
-.droupdown-title{
+
+.droupdown-title {
+	/* position: relative; */
 	color: #78e9ba;
 	max-height: 15px;
 	font-size: large;
 	font-weight: 800;
 }
-option{
-	max-height:200px;
+
+option {
+	max-height: 200px;
+	/* margin-top: 2px; */
 }
+
 table {
 	flex-direction: column;
 	width: 100%;
@@ -153,6 +162,13 @@ th {
 tbody {
 	height: 90%;
 	overflow: auto;
+}
+
+.link-tag:hover {
+	box-shadow: -1px 4px 4px gray;
+	text-decoration: none;
+	cursor: pointer;
+	color: #78e9ba;
 }
 
 .match-list-thead {
@@ -210,6 +226,13 @@ tbody {
 	width: 100%;
 	box-sizing: border-box;
 }
-  
-.drop:hover {background-color: #ddd;}
-  
+
+.totalOdds-content {
+	margin-top: 20px;
+	font-size: large;
+	font-weight: 700;
+}
+
+.total-Odds {
+	margin-left: 5px;
+}
