@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Select from 'react-select'
-
-
+import "./index.css";
 const BestSlipSelection = () => {
 	const [data, setData] = useState([]);
 	// console.log("maket list ", data)
@@ -25,21 +24,68 @@ const BestSlipSelection = () => {
 		}
 		fetchApi();
 	}, [])
+
+	
 	return (
 		<>
 			<div>
-				<span>Bestslip Selection :</span>
-				<select>
-					{data.map((elem, index) => <option key={index}>{elem.MarketName}</option>
-					)}
-					<option></option>
-				</select>
-				<select>
-					<option>{legs.Legs}</option>
-					{/* {legs.map((elem) => <option>{elem.Legs}</option>
-					)} */}
-					<option></option>
-				</select>
+				<div className='builder-table-container'>
+				<div>
+					<span className="droupdown-title">Bestslip Selection :</span>
+						<select className="select-drop">
+							{data.map((elem, index) => <option className="drop" key={index}>{elem.MarketName}</option>
+							)}
+						</select>
+						<span  className="droupdown-title">Legs :</span>
+						<select>
+							<option>{legs.Legs}</option>
+						</select>
+					</div>
+					<div className="builder-table">
+
+						<table className='table'>
+							<thead className="builder-table-thead">
+								<tr>
+									<th>Pike</th>
+									<th>Market</th>
+									<th>Sub Market</th>
+									<th>Outcome</th>
+									<th>Key Stat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Marketoutcome</td>
+									<td>2.5</td>
+									<td>Drow</td>
+									<td>abcabgggggggg</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Marketoutcome</td>
+									<td>2.5</td>
+									<td>Drow</td>
+									<td>abcabgggggggg</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Marketoutcome</td>
+									<td>2.5</td>
+									<td>Drow</td>
+									<td>abcabgggggggg</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Marketoutcome</td>
+									<td>2.5</td>
+									<td>Drow</td>
+									<td>abcabgggggggg</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</>
 	)

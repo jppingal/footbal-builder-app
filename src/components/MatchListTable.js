@@ -25,10 +25,10 @@ const MatchListTable = () => {
 	}
 
 	return (
-		<div className='todoList-container'>
+		<div className='matchList-container'>
 			<div className="table-data">
 				<table className='table'>
-					<thead>
+					<thead className='match-list-thead'>
 						<tr>
 							<th>Country</th>
 							<th>LeagueName</th>
